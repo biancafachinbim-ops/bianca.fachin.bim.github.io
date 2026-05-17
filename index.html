@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bianca Fachin - BIM Technician | Delivering BIM to Mitigate Climate Change</title>
+    <meta name="description" content="Bianca Fachin - MSc BIM Global Management. Expert in Revit, AutoCAD, OpenBIM, CDE Management. Ireland-based BIM Technician delivering sustainable construction solutions.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bianca Fachin - BIM Technician">
+    <meta property="og:description" content="Delivering BIM to mitigate climate change. MSc BIM Global Management, Revit & AutoCAD Specialist.">
+    <meta property="og:image" content="hero.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bianca Fachin",
+        "jobTitle": "BIM Engineering Technician",
+        "description": "MSc in BIM Global Management, Digital Construction Technology, Building Technician",
+        "image": "hero.jpg",
+        "url": "https://www.linkedin.com/in/bianca-fachin/",
+        "email": "bianca.fachin.bim@gmail.com",
+        "addressCountry": "IE",
+        "knowsAbout": "BIM, Revit, AutoCAD, OpenBIM, CDE Management"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <style>
+        :root {
+            --primary:      #214d9c;
+            --purple:       #993989;
+            --blue:         #349bae;
+            --accent:       #dc214b;
+            --bg-light:     #F8FAFC;
+            --bg-dark:      #1E293B;
+            --text-light:   #1E293B;
+            --text-dark:    #F8FAFC;
+            --card-light:   #FFFFFF;
+            --border-light: #E2E8F0;
+            --nav-height:   72px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: var(--nav-height); }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-light);
+            background: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* ── HEADER ──────────────────────────────────────── */
+        header {
+            position: fixed; top: 0; width: 100%;
+            background: #FFFFFF; z-index: 1000;
+            border-bottom: 1px solid var(--border-light);
+            height: var(--nav-height);
+        }
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            height: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px;
+        }
+        .logo { font-size: 1.4rem; font-weight: 700; color: var(--primary); }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a {
+            text-decoration: none; color: var(--primary);
+            font-weight: 600; font-size: 0.95rem; transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--accent); }
+        .mobile-menu { display: none; flex-direction: column; cursor: pointer; }
+        .mobile-menu span { width: 25px; height: 3px; background: var(--text-light); margin: 3px 0; transition: 0.3s; }
+
+        /* ── FULL-SCREEN SECTIONS ────────────────────────── */
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .section-inner { padding: 2rem 0 0.75rem; }
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem); font-weight: 700;
+            text-align: center; margin-bottom: 2rem;
+            position: relative; color: var(--bg-dark);
+        }
+        .section-title::after {
+            content: ''; position: absolute;
+            bottom: -10px; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+
+        /* ── HERO ────────────────────────────────────────── */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center;
+            background-color: #060e24;
+            background-image:
+                linear-gradient(135deg, rgba(6,14,36,1.0) 0%, rgba(9,20,55,0.98) 55%, rgba(18,50,95,0.93) 100%);
+            background-size: cover; background-position: center;
+            color: white; position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+            background-size: 60px 60px, 60px 60px, 12px 12px, 12px 12px;
+            pointer-events: none; z-index: 0;
+        }
+        .hero-content {
+            display: grid; grid-template-columns: 1fr auto 1fr;
+            gap: 3rem; align-items: center; z-index: 1;
+            width: 100%; max-width: 1200px; margin: 0 auto;
+            padding: calc(var(--nav-height) + 2rem) 20px 2rem;
+        }
+        .hero-text { display: flex; flex-direction: column; align-items: flex-start; }
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700;
+            line-height: 1.1; margin-bottom: 0.5rem; color: white;
+        }
+        .hero-role {
+            font-size: 0.8rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 2px; color: #7dd3e8;
+            background: rgba(255,255,255,0.12); padding: 0.3rem 1rem;
+            border-radius: 20px; display: inline-block; margin-bottom: 1.2rem;
+        }
+        .hero-desc {
+            font-size: 0.88rem; color: rgba(255,255,255,0.85);
+            max-width: 320px; margin-bottom: 2rem;
+        }
+        .hero-stats { display: flex; gap: 2rem; }
+        .hero-stat { text-align: center; }
+        .hero-stat .stat-num { font-size: 1.7rem; font-weight: 700; color: white; display: block; line-height: 1; }
+        .hero-stat .stat-label { font-size: 0.63rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7; display: block; margin-top: 0.2rem; }
+
+        .hero-image {
+            display: flex; justify-content: center; align-items: center; position: relative;
+        }
+        .hero-image::before { display: none; }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1);    opacity: 0.5; }
+            50%       { transform: scale(1.08); opacity: 0.2; }
+        }
+        .hero-image img {
+            max-width: 320px; max-height: 450px; width: auto; height: auto;
+            object-fit: contain;
+            border-radius: 16px;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+            position: relative; z-index: 1; display: block;
+        }
+        .photo-placeholder {
+            width: 300px; height: 380px; border-radius: 16px;
+            background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.2);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            color: rgba(255,255,255,0.65); font-size: 0.78rem; text-align: center; gap: 0.5rem;
+            position: relative; z-index: 1;
+        }
+        .hero-right { display: flex; flex-direction: column; align-items: flex-start; }
+        .hero-right .tagline {
+            font-size: 1.4rem; font-weight: 800; color: white;
+            line-height: 1.3; margin-bottom: 0.8rem;
+        }
+        .hero-right .tagline-sub {
+            font-size: 0.83rem; color: rgba(255,255,255,0.75);
+            margin-bottom: 2rem; max-width: 300px;
+        }
+        .cta-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        /* ── BUTTONS ─────────────────────────────────────── */
+        .btn {
+            padding: 0.85rem 1.7rem; border-radius: 50px; text-decoration: none;
+            font-weight: 600; font-family: 'Montserrat', sans-serif; font-size: 0.9rem;
+            transition: all 0.3s ease; display: inline-flex; align-items: center;
+            gap: 0.5rem; border: 2px solid transparent; cursor: pointer;
+        }
+        .btn-primary  { background: var(--accent); color: white; border-color: var(--accent); }
+        .btn-primary:hover  { background: #b8193a; border-color: #b8193a; transform: translateY(-2px); box-shadow: 0 6px 18px rgba(220,33,75,0.35); }
+        .btn-secondary { background: transparent; color: white; border-color: rgba(255,255,255,0.5); }
+        .btn-secondary:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
+        .btn-outline  { background: transparent; color: var(--primary); border-color: var(--primary); }
+        .btn-outline:hover  { background: var(--primary); color: white; transform: translateY(-2px); }
+        .btn-model    { background: var(--blue); color: white; border-color: var(--blue); }
+        .btn-model:hover    { background: #2a7d8e; border-color: #2a7d8e; transform: translateY(-2px); }
+
+        /* ── ABOUT ───────────────────────────────────────── */
+        #about { background: var(--bg-light); }
+        .about-top {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 3rem; align-items: start; margin-bottom: 2.5rem;
+        }
+        .about-bio p { font-size: 1rem; line-height: 1.85; opacity: 0.9; }
+        .qualifications-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+        .qualification {
+            background: var(--card-light); padding: 1.4rem 1.2rem;
+            border-radius: 12px; border-left: 4px solid var(--primary);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07); transition: transform 0.3s;
+        }
+        .qualification:hover { transform: translateY(-5px); }
+        .qualification h3 { font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--primary); }
+        .qualification p  { font-size: 0.8rem; opacity: 0.8; margin: 0; }
+        .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+        .skill-label { font-weight: 600; margin-bottom: 0.4rem; display: block; font-size: 0.88rem; }
+        .skill-bar   { height: 8px; background: var(--border-light); border-radius: 4px; overflow: hidden; }
+        .skill-progress { height: 100%; border-radius: 4px; width: 0%; transition: width 2s ease-in-out; }
+
+        /* ── PORTFOLIO ───────────────────────────────────── */
+        #portfolio { background: #FFFFFF; }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        .project-card {
+            background: var(--card-light); border-radius: 20px; overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.09);
+            transition: all 0.4s ease; display: flex; flex-direction: column;
+        }
+        .project-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.16); }
+        .project-image-wrap { position: relative; overflow: hidden; cursor: pointer; }
+        .project-image-wrap:hover .img-overlay { opacity: 1; }
+        .img-overlay {
+            position: absolute; inset: 0; background: rgba(33,77,156,0.75);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.3s;
+            color: white; font-weight: 600; font-size: 0.9rem; gap: 0.5rem;
+        }
+        .project-image { width: 100%; height: 155px; object-fit: cover; display: block; transition: transform 0.4s; }
+        .project-card:hover .project-image { transform: scale(1.04); }
+        .project-content { padding: 1rem 1.2rem; flex: 1; display: flex; flex-direction: column; }
+        .project-title   { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--primary); }
+        .project-description { margin-bottom: 0.6rem; opacity: 0.8; color: var(--text-light); font-size: 0.82rem; flex: 1; }
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.1rem; }
+        .tech-badge { background: var(--blue); color: white; padding: 0.22rem 0.65rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+        .project-links { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; margin-top: auto; padding-top: 0.5rem; }
+        .btn-card { padding: 0.28rem 0.85rem !important; font-size: 0.74rem !important; }
+
+        /* ── GALLERY MODAL ───────────────────────────────── */
+        .gallery-modal {
+            display: none; position: fixed; inset: 0;
+            background: rgba(0,0,0,0.93); z-index: 10000;
+            align-items: center; justify-content: center;
+        }
+        .gallery-modal.active { display: flex; }
+        .gallery-inner {
+            position: relative; max-width: 1100px; width: 95%;
+            max-height: 94vh; display: flex; flex-direction: column; align-items: center;
+        }
+        .gallery-header {
+            width: 100%; display: flex; justify-content: space-between;
+            align-items: center; padding-bottom: 1rem; color: white;
+        }
+        .gallery-title { font-size: 1.15rem; font-weight: 700; }
+        .gallery-close {
+            background: none; border: none; color: white;
+            font-size: 2rem; cursor: pointer; line-height: 1; padding: 0 0.4rem;
+        }
+        .gallery-close:hover { color: var(--accent); }
+        .gallery-main {
+            position: relative; width: 100%;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .gallery-image-container {
+            width: 100%; height: 76vh;
+            display: flex; align-items: center; justify-content: center;
+            overflow: auto; border-radius: 12px;
+            background: #111; position: relative;
+        }
+        .gallery-image-container img {
+            max-width: 100%; max-height: 76vh; object-fit: contain; border-radius: 8px;
+        }
+        .gallery-image-container iframe {
+            position: absolute; inset: 0;
+            width: 100%; height: 100%; border: none; border-radius: 8px;
+            background: #f5f5f5;
+        }
+        .gallery-nav-btn {
+            position: absolute; top: 50%; transform: translateY(-50%);
+            background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3);
+            color: white; width: 48px; height: 48px; border-radius: 50%;
+            font-size: 1.1rem; cursor: pointer; transition: background 0.2s;
+            display: flex; align-items: center; justify-content: center; z-index: 2;
+        }
+        .gallery-nav-btn:hover { background: rgba(255,255,255,0.28); }
+        .gallery-nav-btn.prev { left: -64px; }
+        .gallery-nav-btn.next { right: -64px; }
+        .gallery-footer { color: rgba(255,255,255,0.65); font-size: 0.82rem; margin-top: 0.9rem; text-align: center; }
+        .gallery-dots   { display: flex; gap: 0.5rem; margin-top: 0.7rem; }
+        .gallery-dot    { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: background 0.2s; }
+        .gallery-dot.active { background: white; }
+
+        /* ── HIGHLIGHTS ──────────────────────────────────── */
+        .highlight-card .btn { background: var(--primary) !important; border-color: var(--primary) !important; color: white !important; }
+        .highlight-card .btn:hover { background: #1a3a7d !important; border-color: #1a3a7d !important; }
+        #highlights { background: var(--bg-light); }
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+        }
+        .highlight-card {
+            background: var(--card-light); padding: 1.8rem; border-radius: 16px;
+            border-left: 5px solid var(--purple); box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+            transition: transform 0.3s; display: flex; flex-direction: column;
+        }
+        .highlight-card:hover { transform: translateX(8px); }
+        .highlight-date { color: var(--purple); font-weight: 600; margin-bottom: 0.6rem; font-size: 0.83rem; }
+        .highlight-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.6rem; }
+        .highlight-card p  { font-size: 0.88rem; opacity: 0.8; flex: 1; }
+
+
+        /* ── REVIEWS ────────────────────────────────────────── */
+        .review-card { border-left-color: var(--accent) !important; grid-column: 1 / -1; max-width: 100%; padding-bottom: 0.8rem; }
+        .review-card .highlight-date { color: var(--accent); }
+        .stars-input { display: flex; flex-direction: row-reverse; justify-content: flex-end; gap: 2px; margin-bottom: 0.8rem; }
+        .stars-input input[type="radio"] { display: none; }
+        .stars-input label { font-size: 1.6rem; color: #ccc; cursor: pointer; transition: color 0.15s; line-height:1; }
+        .stars-input input[type="radio"]:checked ~ label,
+        .stars-input label:hover,
+        .stars-input label:hover ~ label { color: #f5a623; }
+        .review-field {
+            width: 100%; margin-bottom: 0.5rem; padding: 0.45rem 0.7rem;
+            border: 1px solid #ddd; border-radius: 8px; font-size: 0.82rem;
+            font-family: inherit; box-sizing: border-box; background: #fff;
+        }
+        .review-field:focus { outline: none; border-color: var(--accent); }
+        textarea.review-field { resize: vertical; }
+        #reviewStatus { margin-top: 0.5rem; font-size: 0.8rem; text-align: center; min-height: 1rem; }
+        /* ── CONTACT ─────────────────────────────────────── */
+        #contact { min-height: auto; }
+#contact { background: #FFFFFF; }
+        /* Contact — two equal side-by-side panels */
+        .contact-panels {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+        .contact-panel {
+            background: var(--card-light);
+            border-radius: 20px;
+            padding: 2.2rem 2rem 0.5rem;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+        .contact-panel-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text);
+            padding-bottom: 0.7rem;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            margin-bottom: 0.2rem;
+        }
+        .contact-panel--touch { border-top: 5px solid var(--primary); }
+        .contact-panel--reviews { border-top: 5px solid var(--blue); }
+        .reviews-placeholder {
+            flex: 1;
+            min-height: 260px;
+            border-radius: 12px;
+            border: 2px dashed var(--border-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 0.85rem;
+        }
+        .reviews-image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 0.8rem;
+        }
+        .reviews-image-grid img {
+            width: 100%; border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .contact-info    { display: flex; flex-direction: column; gap: 0.65rem; }
+        .contact-item    { display: flex; align-items: center; gap: 1rem; }
+        .contact-item i  {
+            width: 50px; height: 50px; flex-shrink: 0;
+            background: linear-gradient(135deg, var(--primary), var(--blue));
+            color: white; border-radius: 12px;
+            display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+        }
+        .contact-form {
+            background: transparent; padding: 0; border-radius: 0;
+            box-shadow: none; width: 100%;
+        }
+        .form-group { margin-bottom: 0.65rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+        .form-group input,
+        .form-group textarea {
+            width: 100%; padding: 1rem; border: 2px solid var(--primary); border-radius: 12px;
+            font-family: 'Montserrat', sans-serif; font-size: 1rem; transition: border-color 0.3s;
+            background: rgba(255,255,255,0.95); color: var(--text-light);
+        }
+        .form-group input:focus,
+        .form-group textarea:focus { outline: none; border-color: var(--accent); }
+        .form-group textarea { resize: vertical; min-height: 180px; }
+        .form-message { padding: 1rem; border-radius: 8px; margin-bottom: 1rem; display: none; }
+        .form-message.success { background: #22c55e; color: white; }
+        .form-message.error   { background: #ef4444; color: white; }
+
+        /* ── FOOTER ──────────────────────────────────────── */
+        footer { background: #060e24; color: var(--text-dark); padding: 2.5rem 0 1.5rem; text-align: center; }
+        .footer-bottom { display: flex; justify-content: center; align-items: center; gap: 0.5rem; flex-wrap: wrap; opacity: 0.75; font-size: 0.88rem; }
+        .footer-tagline { }
+        .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; }
+        .social-links a {
+            width: 46px; height: 46px; background: var(--primary); color: white;
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            text-decoration: none; transition: all 0.3s;
+        }
+        .social-links a:hover { background: var(--accent); transform: translateY(-3px); }
+
+        /* ── ANIMATIONS ──────────────────────────────────── */
+        .fade-in { opacity: 0; transform: translateY(28px); transition: all 0.75s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* ── LOADING ─────────────────────────────────────── */
+        .loading { position: fixed; inset: 0; background: var(--primary); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s; }
+        .loading.hidden { opacity: 0; pointer-events: none; }
+        .loader { width: 48px; height: 48px; border: 3px solid rgba(255,255,255,0.3); border-top: 3px solid white; border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        /* ── SCROLLBAR ───────────────────────────────────── */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--border-light); }
+        ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
+
+        /* ── RESPONSIVE ──────────────────────────────────── */
+        @media (max-width: 1024px) {
+            .hero-content { grid-template-columns: 1fr 1fr; }
+            .hero-image   { display: none; }
+            .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            /* NAV */
+            .mobile-menu { display: flex; }
+            .nav-links {
+                display: none; flex-direction: column;
+                position: absolute; top: var(--nav-height); left: 0; width: 100%;
+                background: white; padding: 1rem 20px;
+                border-bottom: 1px solid var(--border-light);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            }
+            .nav-links.open { display: flex; }
+            .logo { font-size: 1.15rem !important; letter-spacing: 0; }
+
+            /* HERO */
+            .hero-content { grid-template-columns: 1fr; text-align: center; gap: 0.6rem; padding: calc(var(--nav-height) + 0.8rem) 1rem 1rem; }
+            .hero-text, .hero-right { align-items: center; }
+            .hero-image { display: flex; }
+            .hero-stats { justify-content: center; flex-wrap: nowrap; gap: 0.8rem; margin-bottom: 0; }
+            .hero-stat { padding: 0.4rem 0.6rem; }
+            .hero-stat .stat-num { font-size: 1.35rem; }
+            .hero-stat .stat-label { font-size: 0.55rem; }
+            .hero-right .tagline-sub { text-align: center; margin-bottom: 0.8rem; }
+            .hero-text h1 { font-size: 2.2rem; white-space: nowrap; margin-bottom: 0.3rem; }
+            .hero-role { margin-bottom: 0.5rem; }
+            .hero-desc { margin-bottom: 0.6rem; }
+            .cta-buttons { justify-content: center; flex-wrap: wrap; gap: 0.5rem; }
+
+            /* SECTIONS */
+            section { min-height: auto; }
+            .section-inner { padding: 1rem 0 0.5rem; }
+            .section-title { font-size: 1.8rem; margin-bottom: 1.2rem; }
+            .container { padding: 0 1rem; }
+
+            /* ABOUT */
+            .about-top { grid-template-columns: 1fr; }
+            .about-personal { grid-template-columns: 1fr !important; gap: 1.5rem !important; text-align: left; }
+            .qualifications-row { grid-template-columns: 1fr; }
+
+            /* PORTFOLIO */
+            .portfolio-grid { grid-template-columns: 1fr; }
+            .project-card { min-height: unset; }
+            .project-image { height: 175px; }
+
+            /* HIGHLIGHTS */
+            .highlights-grid { grid-template-columns: 1fr; }
+            .review-card { grid-column: 1 !important; }
+            .stars-input label { font-size: 1.2rem; }
+
+            /* GALLERY */
+            .gallery-inner {
+                width: calc(100vw - 1.6rem); max-height: 92vh;
+            }
+            .gallery-image-container { height: 52vh; }
+            .gallery-nav-btn { width: 36px; height: 36px; font-size: 0.85rem; }
+            .gallery-nav-btn.prev { left: 0; }
+            .gallery-nav-btn.next { right: 0; }
+            .gallery-dot { width: 6px; height: 6px; }
+
+            /* CONTACT */
+            .contact-panels { grid-template-columns: 1fr; gap: 2rem; }
+
+            /* FOOTER */
+            footer .footer-bottom { flex-direction: column; gap: 0.2rem; text-align: center; }
+        }
+        @media (max-width: 480px) {
+            .logo { font-size: 1rem !important; }
+            .hero-text h1 { font-size: 1.9rem; white-space: nowrap; }
+            .hero-stat { padding: 0.5rem 0.8rem; }
+            .stat-num { font-size: 1.3rem; }
+            .btn { padding: 0.55rem 1rem; font-size: 0.82rem; }
+            .gallery-image-container { height: 42vh; }
+            .gallery-inner { width: 100vw; max-height: 100vh; border-radius: 0; }
+            .tech-badge { font-size: 0.68rem; padding: 0.18rem 0.45rem; }
+            .project-links { gap: 0.3rem; }
+            .section-title { font-size: 1.5rem; }
+            .highlight-card { padding: 1.2rem; }
+            .review-field { font-size: 0.88rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loading" id="loading"><div class="loader"></div></div>
+
+    <!-- ── HEADER ────────────────────────────────────────── -->
+    <header id="header">
+        <nav>
+            <div class="logo">Modelling &amp; Managing Information</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ── HOME ──────────────────────────────────────────── -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+
+            <!-- LEFT -->
+            <div class="hero-text fade-in">
+                <h1>Bianca Fachin</h1>
+                <span class="hero-role">BIM Engineering Technician</span>
+                <p class="hero-desc">Ireland-based BIM professional delivering digital construction workflows — from 2D drafting to fully coordinated 3D model - across structural discipline. Managing information as per ISO 19650 standards.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-num">8+</span>
+                        <span class="stat-label">Years<br>Experience</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-num">MSc</span>
+                        <span class="stat-label">BIM Global<br>Management</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-num">IRL</span>
+                        <span class="stat-label">Based in<br>Ireland</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CENTRE: profile photo -->
+            <div class="hero-image fade-in" id="heroImageWrap">
+                <img src="hero2.jpg" alt="Bianca Fachin"
+                     onerror="this.outerHTML='<div class=\'photo-placeholder\'><i class=\'fas fa-user-circle\' style=\'font-size:3.5rem;opacity:0.6;\'></i></div>'"
+                     style="background:transparent;">
+            </div>
+
+            <!-- RIGHT -->
+            <div class="hero-right fade-in">
+                <p class="tagline">Delivering BIM to<br>mitigate climate change!</p>
+                <p class="tagline-sub">Revit · AutoCAD · Structure · Rebar ·<br>OpenBIM · IFC · CDE &amp; Information Management · BIM Coordination</p>
+                <div class="cta-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── ABOUT ──────────────────────────────────────────── -->
+    <section id="about">
+        <div class="container section-inner">
+            <h2 class="section-title fade-in">About Me</h2>
+
+            <!-- Row 1: Bio (left) + Skills (right) — same level -->
+            <div class="about-top">
+                <div class="about-bio fade-in">
+                    <p>Deeply enthusiastic about all aspects of Information Management (BIM), construction digitalisation, and interpersonal dynamics. With 8+ years of expertise in the AECO, I deliver sustainable BIM solutions that drive project success and environmental impact reduction.</p>
+                </div>
+                <div class="fade-in">
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <span class="skill-label">Revit &amp; 3D Modelling</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="100%" style="background:#349bae;"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-label">AutoCAD Detailing</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="100%" style="background:#993989;"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-label">OpenBIM (IFC/BCF)</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="100%" style="background:#993989;"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-label">CDE Management</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="100%" style="background:#dc214b;"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-label">BIM Execution Planning</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="100%" style="background:#dc214b;"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-label">Construction Drawings</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="100%" style="background:#349bae;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Three qualification cards side by side -->
+            <div class="qualifications-row fade-in">
+                <div class="qualification">
+                    <h3>MSc in Building Information Modelling</h3>
+                    <p>BIM Global Management — ISO 19650</p>
+                </div>
+                <div class="qualification">
+                    <h3>Digital Construction Technology</h3>
+                    <p>Authoring Tools and Information Management</p>
+                </div>
+                <div class="qualification">
+                    <h3>Building Technician &amp; Design</h3>
+                    <p>Training in Construction Practices</p>
+                </div>
+            </div>
+
+            <!-- Row 3: Personal intro with photo -->
+            <div class="about-personal fade-in" style="display:grid;grid-template-columns:auto 1fr;gap:2.5rem;align-items:start;margin-top:3rem;background:var(--card-light);border-radius:20px;padding:2rem 2.5rem;box-shadow:0 12px 30px rgba(0,0,0,0.07);">
+                <div style="flex-shrink:0;">
+                    <img src="hero.jpg" alt="Bianca Fachin"
+                         style="max-width:180px;height:auto;object-fit:contain;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.15);"
+                         onerror="this.style.display='none'">
+                </div>
+                <div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:1rem;">Hello, call me Bia!</h3>
+                    <p style="font-size:0.88rem;line-height:1.85;opacity:0.85;margin-bottom:1rem;">I'm a Brazilian BIM and structural technician based in County Galway, Ireland. When I'm not deep in modelling, you'll find me hiking, hunting down good vegan street food, doting on my cat, or exploring new countries. I have ADHD, which means I bring high energy, deep curiosity, and genuine passion to every problem I take on.</p>
+                    <p style="font-size:0.88rem;line-height:1.85;opacity:0.85;">My path began in Brazil, studying civil engineering and working on site and in construction management. Moving to Ireland opened new possibilities: I completed an MSc in Global BIM Management and committed to one mission — bringing practical digital construction workflows to the teams and projects that need them most. For me, BIM is ultimately about people, process, and metadata working together to deliver smarter and more sustainable projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── WORK ───────────────────────────────────────────── -->
+    <section id="portfolio">
+        <div class="container section-inner">
+            <h2 class="section-title fade-in">Portfolio</h2>
+            <div class="portfolio-grid">
+
+                <!-- AI & Automation -->
+                <div class="project-card fade-in">
+                    <div class="project-image-wrap" onclick="openGallery('aiautomation')">
+                        <img src="AI-DG1.jpg" alt="AI &amp; Automation" class="project-image" loading="lazy">
+                        <div class="img-overlay"><i class="fas fa-images"></i> View Gallery</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI &amp; Automation</h3>
+                        <p class="project-description">AI&#8209;driven automation to streamline 2D and 3D workflows, reduce repetitive tasks, and extracting data from PDF drawings. Aligned with ISO&nbsp;19650&#8209;1 to support consistent naming convention and drawing register accuracy across projects.</p>
+                        <div class="project-links">
+                            <span class="tech-badge">AI Integration</span>
+                            <span class="tech-badge">ISO 19650</span>
+                            <span class="tech-badge">CDE</span>
+                            <button onclick="openGallery('aiautomation')" class="btn btn-outline btn-card">
+                                <i class="fas fa-images"></i> View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports Hall -->
+                <div class="project-card fade-in">
+                    <div class="project-image-wrap" onclick="openGallery('sportshall')">
+                        <img src="0382-Project3.jpg" alt="Sports Hall" class="project-image" loading="lazy">
+                        <div class="img-overlay"><i class="fas fa-images"></i> View Gallery</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sports Hall</h3>
+                        <p class="project-description">Large span sports facility featuring steel frame and blockwork wall — Revit structural model with IFC export.</p>
+                        <div class="project-links">
+                            <span class="tech-badge">Revit Structure</span>
+                            <span class="tech-badge">IFC Model</span>
+                            <!-- ▶ Replace # with your Speckle Sports Hall URL -->
+                            <button onclick="openGallery('sportshall')" class="btn btn-outline btn-card">
+                                <i class="fas fa-images"></i> View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Housing Scheme -->
+                <div class="project-card fade-in">
+                    <div class="project-image-wrap" onclick="openGallery('housing')">
+                        <img src="0546-image1.jpg" alt="Housing Scheme" class="project-image" loading="lazy">
+                        <div class="img-overlay"><i class="fas fa-images"></i> View Gallery</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Housing Scheme</h3>
+                        <p class="project-description">84-unit residential development with full coordination across structural, architectural and MEP disciplines.</p>
+                        <div class="project-links">
+                            <span class="tech-badge">IFC Coordination</span>
+                            <span class="tech-badge">AutoCAD Detailing</span>
+                            <span class="tech-badge">Clash Detection</span>
+                            <button onclick="openGallery('housing')" class="btn btn-outline btn-card">
+                                <i class="fas fa-images"></i> View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warehouse -->
+                <div class="project-card fade-in">
+                    <div class="project-image-wrap" onclick="openGallery('warehouse')">
+                        <img src="0598-Project4.jpg" alt="Industrial Warehouse" class="project-image" loading="lazy">
+                        <div class="img-overlay"><i class="fas fa-images"></i> View Gallery</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Warehouse</h3>
+                        <p class="project-description">Industrial warehouse with mezzanine and lab spaces — full structural Revit model with IFC export and coordination.</p>
+                        <div class="project-links">
+                            <span class="tech-badge">Revit Structure</span>
+                            <span class="tech-badge">IFC Model</span>
+                            <!-- ▶ Replace # with your Speckle Warehouse URL -->
+                            <button onclick="openGallery('warehouse')" class="btn btn-outline btn-card">
+                                <i class="fas fa-images"></i> View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── HIGHLIGHTS ─────────────────────────────────────── -->
+    <section id="highlights">
+        <div class="container section-inner">
+            <h2 class="section-title fade-in">Highlights</h2>
+            <div class="highlights-grid">
+
+                <div class="highlight-card fade-in">
+                    <div class="highlight-date">📅 March 2024</div>
+                    <h3>BIM Process Sketch</h3>
+                    <p>Hand-drawn BIM workflow diagram showing CDE containers (WIP, Shared, Published, Archive) and information flow across project stages. Emphasises status control, approvals, and collaboration between task teams.</p>
+                    <a href="https://www.linkedin.com/posts/bianca-fachin_bim-bimtraining-iso19650-activity-7168303353247043584-7Cxd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbWoNwBLhbCB5gH81TxHnkz4vh2MPpc2u4"
+                       target="_blank" class="btn btn-primary" style="display:inline-flex;justify-content:center;margin-top:1rem;width:100%;">
+                        View on LinkedIn
+                    </a>
+                </div>
+
+                <div class="highlight-card fade-in">
+                    <div class="highlight-date">📅 March 2025</div>
+                    <h3>Prezi Presentation</h3>
+                    <p>Animated CV presenting my BIM and structural journey with visual timelines, key projects, and software skills. Highlights responsibilities, achievements, and education in a clear, engaging format.</p>
+                    <a href="https://prezi.com/view/gVLz6LM8dlAJjuVDavgf/" target="_blank"
+                       class="btn btn-primary" style="display:inline-flex;justify-content:center;margin-top:1rem;width:100%;">
+                        View Presentation
+                    </a>
+                </div>
+
+                <div class="highlight-card fade-in">
+                    <div class="highlight-date">📅 July 2025</div>
+                    <h3>CPD Eng. Ireland Certification</h3>
+                    <p>Leading the implementation of structured CPD practices and documentation, I drove the successful achievement of the Engineers Ireland CPD Accredited Employer Standard, showcasing my ability to design and embed effective professional development frameworks.</p>
+                    <a href="https://www.linkedin.com/posts/bianca-fachin_engineersireland-cpdaccreditedemployer-engineeringleadership-activity-7354481471828418562-l51G?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbWoNwBLhbCB5gH81TxHnkz4vh2MPpc2u4"
+                       target="_blank" class="btn btn-primary" style="display:inline-flex;justify-content:center;margin-top:1rem;width:100%;">
+                        View on LinkedIn
+                    </a>
+                </div>
+
+                <div class="highlight-card fade-in">
+                    <div class="highlight-date">📅 April 2026</div>
+                    <h3>Final Master Project</h3>
+                    <p>Developed discipline-specific IFC models in Tekla, Archicad, and Revit for an office building. Federated these into a single coordinated model that supported interoperability, clash detection, and information management across openBIM workflows.</p>
+                    <button onclick="openGallery('fmp')" class="btn btn-primary" style="display:inline-flex;justify-content:center;align-items:center;gap:0.4rem;margin-top:1rem;width:100%;">
+                        <i class="fas fa-play-circle"></i> View Models
+                    </button>
+                </div>
+
+                <div class="highlight-card review-card fade-in">
+                    <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.6rem;">
+                        <div class="stars-input" style="margin-bottom:0;">
+                            <input type="radio" name="rating" id="s5" value="5"><label for="s5">★</label>
+                            <input type="radio" name="rating" id="s4" value="4"><label for="s4">★</label>
+                            <input type="radio" name="rating" id="s3" value="3"><label for="s3">★</label>
+                            <input type="radio" name="rating" id="s2" value="2"><label for="s2">★</label>
+                            <input type="radio" name="rating" id="s1" value="1"><label for="s1">★</label>
+                        </div>
+                        <h3 style="margin:0;">Leave me a Review</h3>
+                    </div>
+                    <p style="margin-bottom:0.9rem;font-size:0.84rem;">Worked with me? I'd love to hear your feedback.</p>
+                    <form id="reviewForm" autocomplete="off">
+                        <input type="hidden" name="email" value="bianca.fachin.bim@gmail.com">
+                        <input type="text" name="review_title" placeholder="Review title *" required class="review-field">
+                        <input type="text" name="reviewer_name" placeholder="Your name *" required class="review-field">
+                        <textarea name="review_message" placeholder="Your review... *" rows="3" required class="review-field"></textarea>
+                        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.2rem;">
+                            Submit Review
+                        </button>
+                        <div id="reviewStatus"></div>
+                    </form>
+                </div>
+
+            </div>
+</div>
+    </section>
+
+    <!-- ── CONTACT ─────────────────────────────────────────── -->
+    <section id="contact">
+        <div class="container section-inner">
+            <div class="contact-panels">
+
+                <!-- PANEL 1: Get In Touch -->
+                <div class="contact-panel contact-panel--touch fade-in">
+                    <span class="contact-panel-title">Get In Touch</span>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:bianca.fachin.bim@gmail.com" style="color:var(--primary);text-decoration:none;font-weight:600;">bianca.fachin.bim@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/bianca-fachin/" target="_blank" style="color:var(--primary);text-decoration:none;font-weight:600;">linkedin.com/in/bianca-fachin</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p style="color:var(--primary);font-weight:600;">County Galway, Ireland</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-message" id="formMessage"></div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" autocomplete="off" required placeholder="Tell me about your project"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                                style="width:100%;font-family:'Montserrat',sans-serif;font-size:1rem;justify-content:center;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- PANEL 2: Reviews -->
+                <div class="contact-panel contact-panel--reviews fade-in">
+                    <span class="contact-panel-title">Reviews</span>
+
+                    <div class="reviews-placeholder">
+                        No reviews yet — check back soon.
+                    </div>
+                    <div class="reviews-image-grid">
+                        <!-- Drop review images here -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ─────────────────────────────────────────── -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <span>&copy; 2026 Bianca Fachin &nbsp;🌱🌍</span>
+                <span class="footer-tagline">Driving sustainability delivering BIM.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ── GALLERY MODAL ──────────────────────────────────── -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-inner">
+            <div class="gallery-header">
+                <span class="gallery-title" id="galleryTitle"></span>
+                <button class="gallery-close" onclick="closeGallery()" aria-label="Close">&times;</button>
+            </div>
+            <div class="gallery-main">
+                <button class="gallery-nav-btn prev" onclick="galleryNav(-1)" aria-label="Previous">&#8592;</button>
+                <div class="gallery-image-container" id="galleryImageContainer"></div>
+                <button class="gallery-nav-btn next" onclick="galleryNav(1)"  aria-label="Next">&#8594;</button>
+            </div>
+            <div class="gallery-footer" id="galleryCounter"></div>
+            <div class="gallery-dots"   id="galleryDots"></div>
+        </div>
+    </div>
+
+    <!-- ── SCRIPTS ────────────────────────────────────────── -->
+    <script>
+
+    // ═══════════════════════════════════════════════════════
+    //  GALLERY DATA — all project files are wired up below.
+    //  To add Speckle links: find the href="#" comments in
+    //  the Sports Hall and Warehouse cards above and replace.
+    // ═══════════════════════════════════════════════════════
+
+    // EmailJS v4 — initialise with public key
+    emailjs.init({ publicKey: '-df7Xvor8q8f_r3aN' });
+
+    var galleries = {
+
+        housing: {
+            title: 'Housing Scheme',
+            slides: [
+                { src: '0546-image1.jpg',              type: 'img', caption: 'Housing Scheme — Overview' },
+                { src: '0546-BF PORT.1-SHEET 04.pdf', type: 'pdf', caption: 'PORT.1 — Sheet 04' },
+                { src: '0546-BF PORT.1-SHEET 05.pdf', type: 'pdf', caption: 'PORT.1 — Sheet 05' },
+                { src: '0546-BF PORT.1-SHEET 06.pdf', type: 'pdf', caption: 'PORT.1 — Sheet 06' },
+                { src: '0546-BF PORT.1-SHEET 07.pdf', type: 'pdf', caption: 'PORT.1 — Sheet 07' },
+                { src: '0546-BF PORT.2-SHEET 01.pdf', type: 'pdf', caption: 'PORT.2 — Sheet 01' },
+                { src: '0546-BF PORT.2-SHEET 02.pdf', type: 'pdf', caption: 'PORT.2 — Sheet 02' },
+                { src: '0546-BF PORT.2-SHEET 03.pdf', type: 'pdf', caption: 'PORT.2 — Sheet 03' }
+            ]
+        },
+
+        sportshall: {
+            title: 'Sports Hall',
+            slides: [
+                { src: '0382-Project3.jpg',         type: 'img', caption: 'Sports Hall — Overview' },
+                { src: '0382- FOUNDATION PLAN.jpg', type: 'img', caption: 'Foundation Plan' },
+                { src: '0382-GROUND FLOOR.jpg',     type: 'img', caption: 'Ground Floor Plan' },
+                { src: '0382-01 FIRST FLOOR.jpg',   type: 'img', caption: 'First Floor Plan' },
+                { src: '0382-ROOF LEVEL.jpg',       type: 'img', caption: 'Roof Level' },
+                { src: '0382-SECTION A-A.jpg',      type: 'img', caption: 'Section A-A' },
+                { src: '0382-SECTION B-B.jpg',      type: 'img', caption: 'Section B-B' },
+                { src: '0382-N&S ELE.jpg', type: 'img', caption: 'North & South Elevation' },
+                { src: '0382-W&E ELE.jpg', type: 'img', caption: 'West & East Elevation' },
+                { src: '0382-Structural Model.jpg', type: 'img', caption: 'Structural Model' },
+                { src: '0382-Steel Model.jpg',      type: 'img', caption: 'Steel Model' }
+            ]
+        },
+
+        warehouse: {
+            title: 'Warehouse',
+            slides: [
+                { src: '0598-Project4.jpg',           type: 'img', caption: 'Warehouse — Overview' },
+                { src: '0598-N&S ELE.jpg',           type: 'img', caption: 'North & South Elevation' },
+                { src: '0598-W&E ELE.jpg',           type: 'img', caption: 'West & East Elevation' },
+                { src: '0598-F1.jpg',                type: 'img', caption: 'First Floor Plan' },
+                { src: '0598-RL.jpg',                type: 'img', caption: 'Roof Level' },
+                { src: '0598-steel elevations.jpg',  type: 'img', caption: 'Steel Elevations' },
+                { src: '0598-STEEL.jpg',             type: 'img', caption: 'Steel Structure' },
+                { src: '0598-STRUCTURAL.jpg',        type: 'img', caption: 'Structural Model' },
+                { src: '0598-COORDINATION.jpg',      type: 'img', caption: 'Coordination View' }
+            ]
+        },
+
+        aiautomation: {
+            title: 'AI & Automation',
+            slides: [
+                { src: 'AI-DG1.jpg',    type: 'img', caption: 'Drawing Register & AI — Generate' },
+                { src: 'AI-DG2.jpg',    type: 'img', caption: 'Drawing Register & AI — Generate' },
+                { src: 'AI-DG3.jpg',    type: 'img', caption: 'Drawing Register & AI — Generate' },
+                { src: 'AI-DG4.jpg',    type: 'img', caption: 'Drawing Register & AI — Generate' },
+                { src: 'AI-DG-E1.jpg',  type: 'img', caption: 'Drawing Register & AI — Update' },
+                { src: 'AI-DG-E2.jpg',  type: 'img', caption: 'Drawing Register & AI — Update' },
+                { src: 'AI-DG-E3.jpg',  type: 'img', caption: 'Drawing Register & AI — Update' },
+                { src: 'AI-DG-E4.jpg',  type: 'img', caption: 'Drawing Register & AI — Update' },
+                { src: 'AI-Naming1.jpg',  type: 'img', caption: 'Naming Convention — ISO 19650-1 Compliance' },
+                { src: 'AI-Naming1B.jpg', type: 'img', caption: 'Naming Convention — ISO 19650-1 Compliance' },
+                { src: 'AI-Naming2.jpg',  type: 'img', caption: 'Naming Convention — ISO 19650-1 Compliance' },
+                { src: 'AI-Naming3.jpg',  type: 'img', caption: 'Naming Convention — ISO 19650-1 Compliance' },
+                { src: 'AI-Naming4.jpg',  type: 'img', caption: 'Naming Convention — ISO 19650-1 Compliance' }
+            ]
+        },
+
+        fmp: {
+            title: 'Final Master Project',
+            slides: [
+                { src: 'fmp-final-a.gif', type: 'img', caption: 'Architectural Model — Archicad' },
+                { src: 'fmp-final-s.gif',        type: 'img', caption: 'Structural Model — Tekla' },
+                { src: 'fmp-final-2.gif',               type: 'img', caption: 'MEP Model — Revit' },
+                { src: 'fmp-final-fed.gif', type: 'img', caption: 'Federated Model — BIM Collab Zoom & Catenda Hub' }
+            ]
+        }
+    };
+
+    var currentGallery = null;
+    var currentSlide   = 0;
+
+    function openGallery(key) {
+        currentGallery = galleries[key];
+        currentSlide   = 0;
+        document.getElementById('galleryTitle').textContent = currentGallery.title;
+        buildDots();
+        renderSlide();
+        document.getElementById('galleryModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeGallery() {
+        document.getElementById('galleryModal').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function galleryNav(dir) {
+        currentSlide = (currentSlide + dir + currentGallery.slides.length) % currentGallery.slides.length;
+        renderSlide();
+    }
+
+    function jumpSlide(i) { currentSlide = i; renderSlide(); }
+
+    function renderSlide() {
+        var slide     = currentGallery.slides[currentSlide];
+        var container = document.getElementById('galleryImageContainer');
+        var counter   = document.getElementById('galleryCounter');
+        var showNav   = currentGallery.slides.length > 1;
+
+        container.innerHTML = '';
+        if (slide.type === 'pdf') {
+            var iframe = document.createElement('iframe');
+            iframe.src = slide.src + '#toolbar=0&navpanes=0&scrollbar=0&view=Fit';
+            iframe.title = slide.caption;
+            container.appendChild(iframe);
+        } else {
+            var img = document.createElement('img');
+            // encode filename only (handles spaces AND & in filenames)
+            var _s = slide.src.lastIndexOf('/');
+            img.src = slide.src.substring(0, _s + 1) + encodeURIComponent(slide.src.substring(_s + 1));
+            img.alt = slide.caption;
+            img.style.cssText = 'max-width:100%;max-height:76vh;object-fit:contain;border-radius:8px;display:block;';
+            // No lazy loading — GIFs must start immediately
+            container.appendChild(img);
+        }
+
+        counter.textContent = slide.caption + '  (' + (currentSlide + 1) + ' / ' + currentGallery.slides.length + ')';
+
+        document.querySelectorAll('.gallery-dot').forEach(function(d, i) {
+            d.classList.toggle('active', i === currentSlide);
+        });
+
+        document.querySelector('.gallery-nav-btn.prev').style.display = showNav ? '' : 'none';
+        document.querySelector('.gallery-nav-btn.next').style.display = showNav ? '' : 'none';
+    }
+
+    function buildDots() {
+        var dots = document.getElementById('galleryDots');
+        dots.innerHTML = currentGallery.slides.map(function(_, i) {
+            return '<div class="gallery-dot' + (i === 0 ? ' active' : '') +
+                   '" onclick="jumpSlide(' + i + ')"></div>';
+        }).join('');
+    }
+
+    document.getElementById('galleryModal').addEventListener('click', function(e) {
+        if (e.target === this) closeGallery();
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (!document.getElementById('galleryModal').classList.contains('active')) return;
+        if (e.key === 'ArrowLeft')  galleryNav(-1);
+        if (e.key === 'ArrowRight') galleryNav(1);
+        if (e.key === 'Escape')     closeGallery();
+    });
+
+    // Review form
+    document.getElementById('reviewForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var status = document.getElementById('reviewStatus');
+        var rating = document.querySelector('input[name="rating"]:checked');
+        if (!rating) {
+            status.style.color = 'var(--accent)';
+            status.textContent = 'Please select a star rating.';
+            return;
+        }
+        status.style.color = '';
+        status.textContent = 'Sending…';
+        emailjs.sendForm('service_c1ckrun', 'template_review', this)
+            .then(function() {
+                status.style.color = 'green';
+                status.textContent = '✓ Thank you! Your review has been received.';
+                document.getElementById('reviewForm').reset();
+            }, function(err) {
+                status.style.color = 'var(--accent)';
+                var msg = err && (err.text || err.status) ? (err.status + ': ' + err.text) : JSON.stringify(err);
+                status.textContent = '✗ ' + msg;
+                console.error('EmailJS review error:', err);
+            });
+    });
+
+    // Loading screen
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            var l = document.getElementById('loading');
+            if (l) l.classList.add('hidden');
+        }, 800);
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+
+    // Fade-in
+    var fadeObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.fade-in').forEach(function(el) { fadeObserver.observe(el); });
+
+    // Skills bars
+    var skillObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.style.width = entry.target.getAttribute('data-width');
+                skillObserver.unobserve(entry.target);
+            }
+        });
+    });
+    document.querySelectorAll('.skill-progress').forEach(function(bar) { skillObserver.observe(bar); });
+
+    // Mobile menu
+    document.getElementById('mobileMenu').addEventListener('click', function() {
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            document.getElementById('navLinks').classList.remove('open');
+        });
+    });
+
+    // Contact form
+    function showMessage(text, type) {
+        var msg = document.getElementById('formMessage');
+        if (!msg) return;
+        msg.textContent = text;
+        msg.className = 'form-message ' + type;
+        msg.style.display = 'block';
+        setTimeout(function() { msg.style.display = 'none'; }, 5000);
+    }
+
+    var contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name    = document.getElementById('name').value.trim();
+            var email   = document.getElementById('email').value.trim();
+            var message = document.getElementById('message').value.trim();
+            if (name.length < 2)    { showMessage('Name must be at least 2 characters.', 'error'); return; }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showMessage('Please enter a valid email address.', 'error'); return; }
+            if (message.length < 10){ showMessage('Message must be at least 10 characters.', 'error'); return; }
+            emailjs.sendForm('service_c1ckrun', 'template_wx04hze', contactForm)
+                .then(function() {
+                    showMessage("Message sent! I'll get back to you soon.", 'success');
+                    contactForm.reset();
+                }, function(err) {
+                    console.error('EmailJS error:', err);
+                    showMessage('Failed to send. Please email me directly.', 'error');
+                });
+        });
+    }
+
+    // Touch swipe for gallery
+    (function() {
+        var startX = 0;
+        var container = document.getElementById('galleryImageContainer');
+        if (!container) return;
+        container.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+        }, { passive: true });
+        container.addEventListener('touchend', function(e) {
+            var diff = startX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 40 && currentGallery) {
+                galleryNav(diff > 0 ? 1 : -1);
+            }
+        }, { passive: true });
+    })();
+
+    // Viewport height fix
+    function setVH() { document.documentElement.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px'); }
+    window.addEventListener('resize', setVH);
+    setVH();
+
+    </script>
+</body>
+</html>
